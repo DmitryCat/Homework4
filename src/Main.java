@@ -80,19 +80,19 @@ public class Main {
             System.out.println("Мест нет");
         }
         //Задание 7
-        int one = 101;
+        int one = 10;
         int two = 102;
         int three = 300;
-       if (one > two && one >three ) {
-           System.out.println("One наибольшее");
-       }
-       if (two > three && two > one) {
-           System.out.println("Two наибольшее");
-       }
-       if (three > one && three > two) {
-           System.out.println("Три наибольшее");
-       } else {
-           System.out.println("Измени значения переменных");
-       }
+        if (one > two && one >three ) {
+            System.out.println("One наибольшее");
+        }
+        if (two > three && two > one) {
+            System.out.println("Two наибольшее");
+        }
+        if (three > one && three > two) {
+            System.out.println("Три наибольшее");
+        } else {
+            System.out.println("Измени значения переменных");
+        }
     }
 }
