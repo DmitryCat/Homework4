@@ -62,37 +62,24 @@ public class Main {
             System.out.println("Если ребенку " + childe + ", то он может кататься один");
         }
         //Задание 6
-        int men = 1;  // покупка билета
-        int site1 = 0; // сидячие места
-        int site2 = 10; //стоячие места
-        boolean variant1 = site1 > 0 && site1 <= 60 && site2 <= 42 && site2 > 0 && men == 1;
-        boolean variant2 = site1 == 0 && site2 <= 42 && site2 > 0 && men == 1;
-        boolean variant3 = site1 <= 60 && site2 ==0 && site1 >0 && men ==1;
-        if (variant1) {
-            System.out.println("В вагоне есть свободные сидячее и стоячее места");
-        }
-        if (variant2) {
+        int tikets = 100;
+        if (tikets < 60) {
+            System.out.println("Есть стоячие и сидячие места");
+        } else if (tikets < 102) {
             System.out.println("Есть стоячие места");
+            } else {
+            System.out.println("Мест нет.");
+                //Задание 7
+                int one = 10000;
+                int two = 1020;
+                int three = 300;
+                if (one > three && one > two) {
+                    System.out.println("ONe Наибольшее");
+                } else if (two > one && two > three) {
+                    System.out.println("Two наибольшее");
+                } else {
+                    System.out.println("Three наибольшее");
+                }
+            }
         }
-        if (variant3) {
-            System.out.println("Есть сидячие места");
-        } if ( site1==0 && site2 ==0 && men==1) {
-            System.out.println("Мест нет");
-        }
-        //Задание 7
-        int one = 101;
-        int two = 102;
-        int three = 300;
-       if (one > two && one >three ) {
-           System.out.println("One наибольшее");
-       }
-       if (two > three && two > one) {
-           System.out.println("Two наибольшее");
-       }
-       if (three > one && three > two) {
-           System.out.println("Три наибольшее");
-       } else {
-           System.out.println("Измени значения переменных");
-       }
     }
-}
